@@ -1,5 +1,5 @@
 import api from "./axios";
-import { BooksResponse, Book } from "../types";
+import type { BooksResponse, Book } from "../types";
 
 export const getBooks = async (search?: string): Promise<BooksResponse> => {
   const response = await api.get("/books", { params: { search } });

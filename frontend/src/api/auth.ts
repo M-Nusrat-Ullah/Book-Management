@@ -1,5 +1,5 @@
 import api from "./axios";
-import { AuthResponse } from "../types";
+import type { AuthResponse } from "../types";
 
 export const register = async (data: {
   name: string;
